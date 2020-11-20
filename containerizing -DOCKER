@@ -1,0 +1,13 @@
+CONTAINERIZING THE WEBPAGE USING DOCKER
+
+
+COMMANDS:
+
+cd ..
+sudo rm -rf LoginSystem/
+git clone --single-branch --branch master https://github.com/saitanuja-coditas/LoginSystem.git
+cd LoginSystem/
+docker build -t dockerpython .
+docker run -itd --name dockerpython -p 5000:5000 dockerpython bash
+docker exec -it dockerpython bash
+netstat -tulnp | grep -i 5000
