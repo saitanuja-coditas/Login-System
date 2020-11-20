@@ -21,7 +21,6 @@ mccabe==0.6.1
 passlib==1.7.4
 pylint==1.8.3
 pyxdg==0.25
-mod-wsgi-httpd==2.4.35.1
 singledispatch==3.4.0.3
 six==1.11.0
 
