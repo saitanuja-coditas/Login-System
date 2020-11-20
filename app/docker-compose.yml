@@ -10,7 +10,7 @@ services:
       - ./app:/app
 
   website:
-    image: php:delfer/php-apache
+    image: httpd
     volumes:
       - ./website:/var/www/html
     ports:
